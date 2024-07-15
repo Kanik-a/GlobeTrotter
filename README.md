@@ -16,11 +16,33 @@ Flight Booking Workflow
 Naviagtion Workflow
 <img width="650" alt="image" src="https://github.com/user-attachments/assets/574d2688-f42c-4f35-a7ad-291431c9fc89">
 
-OOP: Concept Of Inheritance --> The following tables display inheritance amongst the functions.
+OOP: Concept Of Inheritance --> The following tables display inheritance amongst the functions in the hotel options, hotel booking and flight booking modules.
 <img width="562" alt="image" src="https://github.com/user-attachments/assets/074aaabf-f86b-40ee-9ba5-3acb3194fc61">
 <img width="562" alt="image" src="https://github.com/user-attachments/assets/a185d079-4107-4032-9119-390622fb9791">
 <img width="562" height="300" alt="image" src="https://github.com/user-attachments/assets/dbe75fcf-e155-4678-a7a0-55510c6ca400">
-<img width="562" alt="image" src="https://github.com/user-attachments/assets/f1d8f937-27ad-4b00-bf7e-9c67d6dcb6bc">
+<img width="562" height="300" alt="image" src="https://github.com/user-attachments/assets/f1d8f937-27ad-4b00-bf7e-9c67d6dcb6bc">
+
+Database Design - ERD
+The following tables have been normalised in 1 - to - many relationships.
+● On the payment form when a user is going to submit their details such as: fullname, email, address, card number etc, their data will be stored in app_booking and app_udetails table that are connected in a 1-to-many relationship, therefore one user can have many bookings.
+● Cancellation will delete the same booking and user details from app_booking and app_udetails table, therefore both tables have booking_id as a foreign key.
+
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/20843ff9-e46b-4d54-aad0-5c405595bd9e">
+
+● The table app_hotel_details stores details such as - name, location etc about different hotels.
+● The table app_room_d will have a 1-to-many relationship with app_hotel_details as it stores the different rooms found in each hotel.
+● The table app_extra will store meals and parking charges for every hotel in the app_hotel_details table.
+
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/cc19ef89-ba3b-4619-a772-15c62d773cfe">
+
+● In the table app_flightudetails, one user can have many bookings and each booking will be unique for every user.
+
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/76d99b20-0835-4200-b42d-15c2d073a9be">
+
+
+
+
+
 
 
 
