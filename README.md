@@ -17,10 +17,10 @@ Naviagtion Workflow
 <img width="650" alt="image" src="https://github.com/user-attachments/assets/574d2688-f42c-4f35-a7ad-291431c9fc89">
 
 OOP: Concept Of Inheritance --> The following tables display inheritance amongst the functions.
-<img width="540" alt="image" src="https://github.com/user-attachments/assets/074aaabf-f86b-40ee-9ba5-3acb3194fc61">
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/074aaabf-f86b-40ee-9ba5-3acb3194fc61">
 <img width="562" alt="image" src="https://github.com/user-attachments/assets/a185d079-4107-4032-9119-390622fb9791">
-<img width="393" alt="image" src="https://github.com/user-attachments/assets/dbe75fcf-e155-4678-a7a0-55510c6ca400">
-<img width="401" alt="image" src="https://github.com/user-attachments/assets/f1d8f937-27ad-4b00-bf7e-9c67d6dcb6bc">
+<img width="562" height="300" alt="image" src="https://github.com/user-attachments/assets/dbe75fcf-e155-4678-a7a0-55510c6ca400">
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/f1d8f937-27ad-4b00-bf7e-9c67d6dcb6bc">
 
 
 
