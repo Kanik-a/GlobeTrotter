@@ -14,6 +14,6 @@ Flight Booking Workflow
 <img width="650" alt="image" src="https://github.com/user-attachments/assets/00f5305c-685a-4192-982a-06e6a6a1efe6">
 
 Naviagtion Workflow
-<img width="499" alt="image" src="https://github.com/user-attachments/assets/574d2688-f42c-4f35-a7ad-291431c9fc89">
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/574d2688-f42c-4f35-a7ad-291431c9fc89">
 
 
