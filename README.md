@@ -1,24 +1,7 @@
 # GlobeTrotter
 Hotel and Flight booking web application
 
-System design
-The system is designed to process data about hotels and rooms as well as flights available in a
-specified city. On the index page, the user will have the option to sign up or login, additionally the
-user will also be able to complete their purchase without signing up or logging into the website. The
-homepage provides the input boxes so that users can input destination, checkin and checkout dates.
-Based on the destination provided, the list of hotels is rendered to the users and they are offered to
-select the options based on price, guest rating and availability as per the checkin and checkout dates.
-On this page users also have the option to sort the results based on prices. Once selection is done by
-the users, they are presented with a list of rooms along with details such as room type, room price,
-amenities, bed type and room size. Finally, the user will then be able to book a room and provide
-payment details and receive a BookingID that will be used to access information about any past or
-present bookings made by them.
-Similarly, the customer can click on the ‘Flights’ tab in order to access a search bar where they can
-enter details such as - city of departure, city of arrival, departure and arrival dates. They will then be
-presented with flights from a range of airlines and prices that they can choose from. After completing
-their booking, another BookingID will be generated through which they can view their flight bookings
-in the ‘My Bookings’ tab.
-Users can also login to the portal for making any modifications to their existing bookings.
-Site admins have the privilege to get business insights by clicking on the “Site Analytics” tab, where
-they can view how many users registered, logged in, number of bookings done in each month and
-available vs booked hotels to make informed decisions.
+System architecture
+The system is intended to handle information on flights, lodging, and rooms that are offered in a certain city. The user can choose to register or log in on the index page, but they can also finish their transaction without doing either. The input areas on the homepage allow users to enter the dates of their trip, check-in, and checkout. Users are given a list of hotels depending on the destination they have specified, and they are able to choose from these possibilities by looking at factors like price, guest rating, and availability for the dates of check-in and check-out, they can also use the tools on this page to sort the results according to price with the help of a mergesort algorithm. After making their pick, users are shown a list of rooms with information on each one, including the type of accommodation, price, amenities, kind of bed, and size. The user will then be able to reserve a room, submit payment information, and get a BookingID that will allow them to view details of any reservations they have made in the past or present.
+
+Similar to this, the consumer may access a search bar by clicking on the "Flights" tab, where they can enter information such the departure and arrival dates, as well as the city of departure and arrival. After that, a selection of flights from various airlines will be shown to them along with their respective costs. They will receive a second BookingID after completing their booking, which they can use to access their flight reservations on the 'My Bookings' tab. Additionally, users can log in to the portal to change any details related to reservations they already have. By selecting the "Site Analytics" tab, site administrators may access business insights such as the number of users who have registered, logged in, and completed bookings each month, as well as the availability and booking status of hotels. This information helps them make informed decisions.
