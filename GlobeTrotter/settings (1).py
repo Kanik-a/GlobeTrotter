@@ -1,0 +1,121 @@
+"""
+
+SETTINGS CONTROLS EVERYTHING!!
+
+Django settings for Skysearch project.
+
+Based on 'django-admin startproject' using Django 2.1.2.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/2.1/topics/settings/
+
+For the full list of settings and their values, see
+https://docs.djangoproject.com/en/2.1/ref/settings/
+"""
+
+import os
+import posixpath
+
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...), gives the address of manage.py that is Skysearch folder
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
+
+# SECURITY WARNING: keep the secret key used in production secret! secret key is unique to a project, donot make it public or security leaks happen
+SECRET_KEY = '602f6bce-3ab0-433c-b243-a2a5d72e9696'
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+ALLOWED_HOSTS = ['globetrotter', '127.0.0.1', 'localhost']
+
+
+# Application references
+# https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
+INSTALLED_APPS = [
+    'app', # myapp
+    # Add your apps here to enable them
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+
+# Middleware framework
+# https://docs.djangoproject.com/en/2.1/topics/http/middleware/
+MIDDLEWARE = [  # how security and requests are handled.
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+ROOT_URLCONF = 'Skysearch.urls' # route a given url.
+
+# Template configuration
+# https://docs.djangoproject.com/en/2.1/topics/templates/
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+WSGI_APPLICATION = 'Skysearch.wsgi.application' # how your sever works
+# Database
+# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'nea',
+        'USER': 'root',
+        'PASSWORD': 'Scorpionking1$',
+        'PORT': '3306',
+        'HOST': '127.0.0.1',
+    }
+}
+
+# Password validation
+# https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
+AUTH_PASSWORD_VALIDATORS = [ # ensures that passwords are good and strong
+    {
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    },
+]
+
+# Internationalization
+# https://docs.djangoproject.com/en/2.1/topics/i18n/
+LANGUAGE_CODE = 'en-us'
+TIME_ZONE = 'UTC'
+USE_I18N = True
+USE_L10N = True
+USE_TZ = True
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.1/howto/static-files/
+STATIC_URL = '/static/' # where are images, javascript etc are stored, this is the address.
+STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
