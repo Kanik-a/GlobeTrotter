@@ -25,12 +25,15 @@ OOP: Concept Of Inheritance --> The following tables display inheritance amongst
 Database Design - ERD
 The following tables have been normalised in 1 - to - many relationships.
 ● On the payment form when a user is going to submit their details such as: fullname, email, address, card number etc, their data will be stored in app_booking and app_udetails table that are connected in a 1-to-many relationship, therefore one user can have many bookings.
+
 ● Cancellation will delete the same booking and user details from app_booking and app_udetails table, therefore both tables have booking_id as a foreign key.
 
 <img width="562" alt="image" src="https://github.com/user-attachments/assets/20843ff9-e46b-4d54-aad0-5c405595bd9e">
 
 ● The table app_hotel_details stores details such as - name, location etc about different hotels.
+
 ● The table app_room_d will have a 1-to-many relationship with app_hotel_details as it stores the different rooms found in each hotel.
+
 ● The table app_extra will store meals and parking charges for every hotel in the app_hotel_details table.
 
 <img width="562" alt="image" src="https://github.com/user-attachments/assets/cc19ef89-ba3b-4619-a772-15c62d773cfe">
