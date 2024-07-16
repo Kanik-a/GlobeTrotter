@@ -43,6 +43,17 @@ The following tables have been normalised in 1 - to - many relationships.
 <img width="562" alt="image" src="https://github.com/user-attachments/assets/76d99b20-0835-4200-b42d-15c2d073a9be">
 
 
+https://github.com/user-attachments/assets/ae91507f-8fd1-4db7-93da-0d38831ce3cb
+
+
+
+
+
+
+https://github.com/user-attachments/assets/7367cf6b-cdec-44c1-8e15-053231a51730
+
+
+
 
 
 
